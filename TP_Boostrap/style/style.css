@@ -1,0 +1,18 @@
+nav{
+    background: black;
+}
+
+.navbar-brand{
+    color: #c6d7ec;
+}
+
+article{
+    /*background: black;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #c6d7ec;
+}
+
+.thumbnail{
+    background: black;
+}
