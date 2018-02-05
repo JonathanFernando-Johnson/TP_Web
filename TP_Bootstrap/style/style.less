@@ -8,23 +8,25 @@ nav{
     color: @text-color;
 }
 
-article{
-    color: @text-color;
+article {
+    color: @text-color;   
 }
 
 .thumbnail{
     background: black;
-}
-
-.card{
-    display : block;
-    /*background : url("https://cdn.polscygracze.pl/uploads/2016/01/8q2JCKx.jpg") no-repeat;*/
     background-image: url("../image/LoL.jpg");
 }
 
-.card:hover
-{
-    display: initial;
-    /*background-image : url("autre_image.jpg");*/
+/*.card{
+    display: none;
+    background : url("https://cdn.polscygracze.pl/uploads/2016/01/8q2JCKx.jpg") no-repeat;
+    
+}*/
+
+img{
+  visibility: collapse;
+}
+img:hover{
+   visibility: initial;
 }
 
