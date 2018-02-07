@@ -8,13 +8,12 @@ nav{
     color: @text-color;
 }
 
-article {
+/*article {
     color: @text-color;   
-}
+}*/
 
 .thumbnail{
     background: black;
-    background-image: url("../image/LoL.jpg");
 }
 
 /*.card{
@@ -23,10 +22,24 @@ article {
     
 }*/
 
-img{
-  visibility: collapse;
+article{
+    color: @text-color; 
+    display: none;
+    /*visibility: hidden;*/
+
+    .thumbnail{
+        display: none;
+    }
+
+    &:hover{
+        display: inline;
+    }
 }
-img:hover{
-   visibility: initial;
+
+.dos{
+    &:hover{
+        display: none;
+        visibility: hidden;
+    }
 }
 
