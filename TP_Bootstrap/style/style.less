@@ -1,31 +1,48 @@
 @text-color: #c6d7ec;
 
-nav{
+nav {
     background: black;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: @text-color;
 }
 
-/*article {
-    color: @text-color;   
-}*/
+article {
 
-.thumbnail{
-    background: black;
+    color: @text-color;
+    background : url("../image/LoL.jpg") no-repeat;
+    background-size: cover;
+
+    animation-name: distribution;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
+    &:hover{
+        background: black;
+    }
 }
 
-/*.card{
-    display: none;
-    background : url("https://cdn.polscygracze.pl/uploads/2016/01/8q2JCKx.jpg") no-repeat;
-    
-}*/
+figure {
 
-article{
-    color: @text-color; 
+    opacity: 0;
+    transition: all ease 1s;
+
+    &:hover{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes distribution {
+    from{}
+    to{}
+}
+/*
+article {
+    color: @text-color;
     display: none;
-    /*visibility: hidden;*/
+    visibility: hidden;
 
     .thumbnail{
         display: none;
@@ -36,10 +53,23 @@ article{
     }
 }
 
-.dos{
+.dos {
     &:hover{
         display: none;
         visibility: hidden;
     }
 }
+*/
+/*article{
+    color: @text-color;
+    background : url("../image/LoL.jpg") no-repeat;
 
+    background-position: center;
+    background-size: contain;
+
+
+    object-fit: scale-down;
+    position: relative;
+    min-width: 100%;
+    height: auto;
+}*/
