@@ -1,0 +1,75 @@
+@text-color: #c6d7ec;
+
+nav {
+    background: black;
+}
+
+.navbar-brand {
+    color: @text-color;
+}
+
+article {
+
+    color: @text-color;
+    background : url("./LoL.jpg") no-repeat;
+    background-size: cover;
+
+    animation-name: distribution;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+
+    &:hover{
+        background: black;
+    }
+}
+
+figure {
+
+    opacity: 0;
+    transition: all ease 0.8s;
+
+    &:hover{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes distribution {
+    from{ opacity: 0; }
+    to{ opacity: 1; transform: rotateY(360deg); }
+}
+/*
+article {
+    color: @text-color;
+    display: none;
+    visibility: hidden;
+
+    .thumbnail{
+        display: none;
+    }
+
+    &:hover{
+        display: inline;
+    }
+}
+
+.dos {
+    &:hover{
+        display: none;
+        visibility: hidden;
+    }
+}
+*/
+/*article{
+    color: @text-color;
+    background : url("../image/LoL.jpg") no-repeat;
+
+    background-position: center;
+    background-size: contain;
+
+
+    object-fit: scale-down;
+    position: relative;
+    min-width: 100%;
+    height: auto;
+}*/

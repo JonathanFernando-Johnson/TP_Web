@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" ng-app="lolMemo">
 
     <head>
         <meta charset="utf-8" />
@@ -19,10 +19,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!-- Less -->
-        <link rel="stylesheet/less" type="text/css" href="./style/style.less" />
+        <link rel="stylesheet/less" type="text/css" href="./style.less" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.js" type="text/javascript"></script>
 
-        <!---<link rel="stylesheet" href="./style/style.css">-->
+        <!--Angular 1-->
+        <script src="./node_modules/angular/angular.js"></script>
+        <script src="./app.js"></script>
     </head>
 
 	<body>
@@ -33,19 +35,19 @@
         <div class="col-md-12 col-sm-12 col-12">
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg" alt="Ivern_0">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Ivern_0">
                     <figcaption>Ivern</figcaption>
                 </figure>
             </article>
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_1.jpg" alt="Ivern_1">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Ivern_1">
                     <figcaption>Ivern</figcaption>
                 </figure>
             </article>
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" alt="Teemo_0">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Teemo_0">
                     <figcaption>Teemo</figcaption>
                 </figure>
             </article>
@@ -54,19 +56,19 @@
         <div class="col-md-12 col-sm-12 col-12">           
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_1.jpg" alt="Teemo_1">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Teemo_1">
                     <figcaption>Teemo</figcaption>
                 </figure>
             </article>
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg" alt="Taric_0">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Taric_0">
                     <figcaption>Taric</figcaption>
                 </figure>
             </article>
             <article class="col-md-4 col-sm-4 col-4 thumbnail">
                 <figure>
-                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_1.jpg" alt="Taric_1">
+                    <img class="img-responsive card" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{KEY}}.jpg" alt="Taric_1">
                     <figcaption>Taric</figcaption>
                 </figure>
             </article>
