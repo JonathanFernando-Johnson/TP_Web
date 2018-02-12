@@ -1,0 +1,40 @@
+@text-color: #c6d7ec;
+
+nav {
+    background: black;
+}
+
+.navbar-brand {
+    color: @text-color;
+}
+
+article {
+
+    color: @text-color;
+    background : url("./image/LoL.jpg") no-repeat;
+    background-size: cover;
+
+    animation-name: distribution;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+
+    &:hover{
+        background: black;
+    }
+}
+
+figure {
+
+    opacity: 0;
+    transition: all ease 0.8s;
+
+    &:hover{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes distribution {
+    from{ opacity: 0; }
+    to{ opacity: 1; transform: rotateY(360deg); }
+}
