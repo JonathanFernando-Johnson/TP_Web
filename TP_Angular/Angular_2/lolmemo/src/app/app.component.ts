@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ChampionService } from './champion.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+    champion : Observable<Champions[]>;
+
+    constructor( private championService: ChampionService ) {}
+
+    ngOnInit(){
+        this.getChampions();
+    }
+
+    getChampions(): void {
+        return this.championService.getChamps();
+    }
+
+    console.log(this.getChampions());
 }
