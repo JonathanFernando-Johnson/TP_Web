@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs/Observable';
 import { ChampionService } from './champion.service';
 
 @Component({
@@ -8,17 +9,9 @@ import { ChampionService } from './champion.service';
 })
 export class AppComponent {
 
-    champion : Observable<Champions[]>;
+    constructor( private championService: ChampionService ) { this.getChampions(); }
 
-    constructor( private championService: ChampionService ) {}
-
-    ngOnInit(){
-        this.getChampions();
-    }
-
-    getChampions(): void {
+    getChampions(): Observable<any> {
         return this.championService.getChamps();
     }
-
-    console.log(this.getChampions());
 }
