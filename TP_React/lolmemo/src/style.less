@@ -1,4 +1,15 @@
+@text-color: #c6d7ec;
+
+nav {
+    background: black;
+}
+
+.navbar-brand {
+    color: @text-color;
+}
+
 article {
+
     color: @text-color;
     background : url("./image/LoL.jpg") no-repeat;
     background-size: cover;
@@ -6,20 +17,21 @@ article {
     animation-name: distribution;
     animation-duration: 7s;
     animation-timing-function: ease;
-}
 
-article:hover {
-    background: black;
+    &:hover{
+        background: black;
+    }
 }
 
 figure {
+
     opacity: 0;
     transition: all ease 0.8s;
-}
 
-figure:hover{
-    opacity: 1;
-    transform: rotateY(360deg);
+    &:hover{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
 }
 
 @keyframes distribution {

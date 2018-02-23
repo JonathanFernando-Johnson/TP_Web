@@ -11,6 +11,6 @@ export class ChampionService {
     }
 
     getChampion() {
-        return this.http.get('./champions.json').map(res => res.json());
+        return this.http.get('../data/champions.json').map((res:Response) => res.json());
     }
 }

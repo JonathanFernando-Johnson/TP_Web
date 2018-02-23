@@ -1,5 +1,14 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}*/
+@text-color: #c6d7ec;
+
+nav {
+    background: black;
+}
+
+.navbar-brand {
+    color: @text-color;
 }
